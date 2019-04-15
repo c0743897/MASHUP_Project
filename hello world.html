@@ -1,22 +1,17 @@
 <html>
     <head>
-        <title>Hello World</title>
+        <title>Map object</title>
         <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
         <meta charset="utf-8">
+        <link rel ="stylesheet" href="style.css">
         <style>html,body,#map_canvas{height:100%;margin:0px;padding:0px}</style>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCpNo6eEJQrB540-L4vhEYQErB4DEWl7Ts"></script>
-        <script>
-        var map;
-        function initialize(){
-            var mapOptions={
-                zoom:12,
-                center:new google.maps.LatLng(40.758904,-73.985128)
-            };
-            map=new google.maps.Map(document.getElementById('map_canvas'),mapOptions);
-        }
-        google.maps.event.addDomListener(window,'load',initialize);</script>
+        <script src = "mapscript.js" charset="utf-8"></script>
+        
     </head>
     <body>
-        <div id="map_canvas"></div>
+        <div id="map_canvas1"></div>
+        <div id="map_canvas2"></div>
+        <div id="map_canvas3"></div>
     </body>
 </html>
